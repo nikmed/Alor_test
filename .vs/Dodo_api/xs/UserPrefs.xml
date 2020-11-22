@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{D3BE85DA-259C-4DA8-A29B-E0286017FE5F}|Default">
+  <MonoDevelop.Ide.ItemProperties.Dodo__api PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Dodo_api/Controllers/PizzaController.cs">
+    <Files>
+      <File FileName="Dodo_api/Models/PizzaRepository.cs" Line="45" Column="29" />
+      <File FileName="Dodo_api/Models/EmptyClass.cs" Line="11" Column="1" />
+      <File FileName="Dodo_api/appsettings.json" Line="11" Column="39" />
+      <File FileName="Dodo_api/Models/IPizzaRepository.cs" Line="1" Column="1" />
+      <File FileName="Dodo_api/Models/PizzaItem.cs" Line="6" Column="20" />
+      <File FileName="Dodo_api/Controllers/PizzaController.cs" Line="19" Column="10" />
+      <File FileName="Dodo_api/Startup.cs" Line="32" Column="31" />
+      <File FileName="Dodo_api/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Dodo_api" expanded="True">
+            <Node name="Dodo_api" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="PizzaController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
