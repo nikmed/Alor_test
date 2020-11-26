@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "/Chs0kIB8lmu8EXnFA524966tsNxlq7AWcn/jMXyMJD05KigJFnI/0SfgKH7SiI2AIcTv/WrfuMKVBVgvWwNkQ==",
+  "dgSpecHash": "/caYiXxUXSn61+Xc3E5PJNqpBvaL23ooTqq4diydKlnu1LjdHewYjNA4z4yOO4CxZ1vjG4nkorybhd3DiSyInA==",
   "success": true,
   "projectFilePath": "/Users/nikmed/Projects/Dodo_api/Dodo_api/Dodo_api.csproj",
   "expectedPackageFiles": [
     "/Users/nikmed/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/Users/nikmed/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.10/microsoft.aspnetcore.jsonpatch.3.1.10.nupkg.sha512",
+    "/Users/nikmed/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.10/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.10.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/microsoft.data.sqlite.core/5.0.0/microsoft.data.sqlite.core.5.0.0.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/microsoft.dotnet.platformabstractions/3.1.6/microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
@@ -26,6 +28,8 @@
     "/Users/nikmed/.nuget/packages/microsoft.extensions.logging.abstractions/5.0.0/microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/microsoft.extensions.options/5.0.0/microsoft.extensions.options.5.0.0.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/microsoft.extensions.primitives/5.0.0/microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "/Users/nikmed/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/nikmed/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.4/sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
     "/Users/nikmed/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",

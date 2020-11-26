@@ -12,9 +12,7 @@ namespace Dodo_api.Models
         }
 
         public DbSet<PizzaItem> PizzaItems { get; set; }
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlite("Filename=Dodo_pizza.db");
-        }
+        public DbSet<AdditionalItem> AdditionalItems { get; set; }
+
     }
 }

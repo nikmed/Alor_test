@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Dodo_api.Repository;
 using Dodo_api.Models;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace Dodo_api.Controllers
 {
@@ -17,28 +17,35 @@ namespace Dodo_api.Controllers
         {
             db = context;
         }
+
         [HttpGet]
         public IEnumerable<PizzaItem> GetAll()
         {
             return db.GetAll();
         }
-        [HttpGet("{id}", Name = "GetTodo")]
+
+        [HttpGet("sort={sort}")]
+        public IEnumerable<PizzaItem> GetAll(string sort)
+        {
+            return db.GetAll(sort);
+        }
+
+        [HttpGet("{id}")]
         public PizzaItem GetById(int id)
         {
             return db.Find(id);
         }
+
         [HttpPost]
-        public void Create(PizzaItem item)
+        public void Create(string ingids, PizzaItem item)
         {
-            db.Add(item);
+            db.Add(ingids, item);
+
         }
+
         [HttpPut("{id}")]
-        public IActionResult Update(int id, PizzaItem item)
+        public IActionResult Update(int id, string ingids, PizzaItem item)
         {
-            if (item == null || item.Id != id)
-            {
-                return BadRequest();
-            }
 
             var pizza = db.Find(id);
             if (pizza == null)
@@ -46,9 +53,24 @@ namespace Dodo_api.Controllers
                 return NotFound();
             }
 
-            db.Update(id, item);
+            db.Update(id, ingids, item);
             return new NoContentResult();
         }
+
+        [HttpPut]
+        public IActionResult Update(int pizzaid, long ingid)
+        {
+            db.AddIngridient(pizzaid, ingid);
+            return new NoContentResult();
+        }
+
+        [HttpDelete]
+        public IActionResult Delete (int pizzaid, long ingid)
+        {
+            db.DelIngridient(pizzaid, ingid);
+            return new NoContentResult();
+        }
+
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

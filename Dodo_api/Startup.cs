@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using Dodo_api.Models;
+using Dodo_api.Repository;
 
 namespace Dodo_api
 {
@@ -29,11 +30,16 @@ namespace Dodo_api
         {
             services.AddControllers();
             services.AddMvc();
+            services.AddScoped<IAdditionalItemRepository, AdditionalItemRepository>();
             services.AddScoped<IPizzaRepository, PizzaRepository>();
             services.AddDbContext<PizzaContext>(options =>
-        options.UseSqlite(Configuration.GetConnectionString("PizzaContext")));
-        
-    }
+            options.UseSqlite(Configuration.GetConnectionString("PizzaContext")));
+            services.AddControllersWithViews()
+            .AddNewtonsoftJson(options =>
+             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
+
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
